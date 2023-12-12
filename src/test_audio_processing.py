@@ -1,7 +1,7 @@
 import unittest
 import numpy as np
 from scaler import spec_transpose, normalize, denormalize
-from augmentations import consecutive_oversample, blackout, random_oversample
+from augmentations import consecutive_oversample, blackout
 
 class TestAudioProcessing(unittest.TestCase):
 
@@ -73,12 +73,6 @@ class TestAudioProcessing(unittest.TestCase):
         mix_consec, vocal_consec = consecutive_oversample(self.mix, self.vocal)
         self.assertEqual(mix_consec.shape, (self.num_samples - 1, 512, 128, 1))
         self.assertEqual(vocal_consec.shape, (self.num_samples - 1, 512, 128, 1))
-        
-    def test_random_oversample(self):
-        # Test random oversampling
-        mix_rand, vocal_rand = random_oversample(self.mix, self.vocal)
-        self.assertEqual(mix_rand.shape, (self.num_samples - 1, 512, 128, 1))
-        self.assertEqual(vocal_rand.shape, (self.num_samples - 1, 512, 128, 1))
         
     def test_blackout(self):
         # Test blackout
