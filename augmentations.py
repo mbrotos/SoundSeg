@@ -52,27 +52,3 @@ def blackout(mixes, vocals):
         vocal_blackout[i, :, start:start + blackout_size, :] = 0
 
     return mix_blackout, vocal_blackout
-
-def random_oversample(mixes, vocals):
-    
-    mix_rand = np.copy(mixes)
-    vocal_rand = np.copy(vocals)
-    half_size = mix_rand.shape[2] // 2
-    concatenated_mixes = []
-    concatenated_vocals = []
-
-    # Creating a list of indices and shuffling it
-    indices = list(range(len(mix_rand)))
-    np.random.shuffle(indices)
-
-    # Pairing each index with the next one and concatenating
-    for i in range(0, len(indices) - 1):
-        cur_sample = []
-        for data in [mix_rand, vocal_rand]:
-            first_half = data[indices[i], :,:half_size, :]
-            second_half = data[indices[i + 1], :, half_size:, :]
-            cur_sample.append(np.concatenate([first_half, second_half], axis=1))
-        concatenated_mixes.append(cur_sample[0])
-        concatenated_vocals.append(cur_sample[1])
-
-    return np.array(concatenated_mixes), np.array(concatenated_vocals)

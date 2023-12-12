@@ -8,7 +8,7 @@ from scaler import normalize, denormalize
 import pickle
 import os
 import json
-from augmentations import random_oversample, consecutive_oversample, blackout
+from augmentations import consecutive_oversample, blackout
 from uuid import uuid4
 import librosa
 
@@ -80,14 +80,13 @@ if __name__ == "__main__":
         mix_mags_train_norm_factors = np.delete(mix_mags_train_norm_factors, indices, axis=0)
         mix_phases_train = np.delete(mix_phases_train, indices, axis=0)
         
-        # Oversample and blackout
+        # Splicing and blackout
         mix_blackout, vocal_blackout = blackout(mix_mags_train_norm, vocal_train_norm)
         mix_blackout = mix_blackout[:mix_blackout.shape[0]//4]
         vocal_blackout = vocal_blackout[:vocal_blackout.shape[0]//4]
         mix_consec, vocal_consec = consecutive_oversample(mix_mags_train_norm, vocal_train_norm)
         mix_consec = mix_consec[:mix_consec.shape[0]//2]
         vocal_consec = vocal_consec[:vocal_consec.shape[0]//2]
-        #mix_rand, vocal_rand = random_oversample(mix_mags_train_norm, vocal_train_norm)
         
         mix_mags_train_norm = np.concatenate((mix_mags_train_norm, mix_consec, mix_blackout), axis=0)
         vocal_train_norm = np.concatenate((vocal_train_norm, vocal_consec, vocal_blackout), axis=0)
