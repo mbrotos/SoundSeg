@@ -18,8 +18,8 @@ def consecutive_oversample(mixes, vocals):
         concatenated = []
 
         for i in range(len(data) - 1):
-            first_half = data[i, :, :half_size, :]
-            second_half = data[i + 1, :, half_size:, :]
+            first_half = data[i, :, half_size:, :]
+            second_half = data[i + 1, :, :half_size, :]
             concatenated.append(np.concatenate([first_half, second_half], axis=1))
 
         return np.array(concatenated)
