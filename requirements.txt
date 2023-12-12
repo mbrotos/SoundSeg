@@ -1,6 +1,6 @@
 librosa
-#numpy
-#tensorflow
+numpy
+tensorflow
 scipy
 pandas
 mir_eval
