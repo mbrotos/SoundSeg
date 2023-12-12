@@ -39,10 +39,7 @@ if __name__ == "__main__":
     # load data
     mix_mags_train = np.load("./processed_data/mix_mags_train_512x128.npy", mmap_mode='r' if args.mmap else None)[:args.dataset_size]
     mix_phases_train = np.load("./processed_data/mix_phases_train_512x128.npy", mmap_mode='r' if args.mmap else None)[:args.dataset_size]
-    vocal_train = np.load(
-        f"./processed_data/vocal_{'masks' if args.mask else 'mags'}_train_512x128.npy",
-        mmap_mode='r' if args.mmap else None
-    )[:args.dataset_size]
+    vocal_train = np.load( f"./processed_data/vocal_mags_train_512x128.npy", mmap_mode='r' if args.mmap else None)[:args.dataset_size]
 
     mix_mags_train_norm, vocal_train_norm, mix_mags_train_norm_factors = normalize(
         np.copy(mix_mags_train),

@@ -22,16 +22,11 @@ def main ():
         mix_phases_dstype = np.concatenate(mix_phases_dstype, axis=0)
         vocal_mags_dstype = np.concatenate(vocal_mags_dstype, axis=0)
         
-        vocal_masks_dstype = np.copy(vocal_mags_dstype)
-
-        np.divide(vocal_mags_dstype, mix_mags_dstype, out=vocal_masks_dstype, where=mix_mags_dstype!=0)
-        
         print('Saving data...')
         # save the data to npy files
         np.save(f'./processed_data/mix_mags_{dstype}_512x128.npy', mix_mags_dstype)
         np.save(f'./processed_data/mix_phases_{dstype}_512x128.npy', mix_phases_dstype)
         np.save(f'./processed_data/vocal_mags_{dstype}_512x128.npy', vocal_mags_dstype)
-        np.save(f'./processed_data/vocal_masks_{dstype}_512x128.npy', vocal_masks_dstype)
         
 if __name__ == '__main__':
     main()
