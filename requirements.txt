@@ -1,0 +1,6 @@
+librosa
+#numpy
+#tensorflow
+scipy
+pandas
+mir_eval
