@@ -7,7 +7,7 @@ def main():
     for t in test:
         name = t.split(os.sep)[1]
         print('Starting: '+name)
-        template = f"#!/bin/bash\nsource venv/bin/activate\npython -u evaluate.py --model_name '{name}' --train_loss"
+        template = f"#!/bin/bash\nsource venv/bin/activate\npython -u evaluate.py --model_name '{name}'"
         with open("tmp.sh", "w") as f:
             f.write(template)
         result = subprocess.run(["sbatch", "tmp.sh"])
