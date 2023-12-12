@@ -1,0 +1,4 @@
+tmp.sh
+*.zip
+data_wav/*
+venv/*
