@@ -10,18 +10,10 @@ Please see the projects preprint for more details: [Spectral Mapping of Singing 
 ## Example Audio and Spectrograms
 
 ### Original Audio
-- Mixture: 
-  <br/><video width="320" height="240" controls>
-  <source src="assets/jimi_mix.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+- Mixture: https://drive.google.com/file/d/1_o-BfOWwSTL52qE1aadqPhRNH2Top-gA/view?usp=sharing
 
 ### Predicted Output
-- Vocal (Predicted): 
-  <br/><video width="320" height="240" controls>
-  <source src="assets/jimi_pred_vocal.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+- Vocal (Predicted): https://drive.google.com/file/d/1_ncbyUDC5GpL0-yJN7bObyk7KMjnQGuy/view?usp=sharing
 
 ### Spectrograms
 - Mixture: <br/>
