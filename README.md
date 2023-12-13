@@ -11,21 +11,21 @@ Please see the projects preprint for more details: [Spectral Mapping of Singing 
 
 ### Original Audio
 - Mixture: 
-  <audio controls>
-    <source src="assets/jimi_mix.wav" type="audio/wav">
+  <br/><audio controls>
+    <source src="assets/jimi_mix.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
 ### Predicted Output
 - Vocal (Predicted): 
-  <audio controls>
-    <source src="assets/jimi_pred_vocal.wav" type="audio/wav">
+  <br/><audio controls>
+    <source src="assets/jimi_pred_vocal.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
 
 ### Spectrograms
-- Mixture: 
+- Mixture: <br/>
 ![Mixture Spectrogram](assets/jimi_mix_spec.png)
-- Vocal (Predicted): 
+- Vocal (Predicted): <br/>
 ![Vocal Spectrogram](assets/jimi_pred_vocal_spec.png)
 
 ## Contents
