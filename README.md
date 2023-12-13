@@ -1,6 +1,5 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mbrotos/SoundSeg/blob/main/demo.ipynb)
 
-```markdown
 # SoundSeg
 
 ## Introduction
@@ -24,8 +23,10 @@ Please see the projects preprint for more details: [Spectral Mapping of Singing 
   </audio>
 
 ### Spectrograms
-- Mixture: ![Mixture Spectrogram](assets/jimi_mix_spec.png)
-- Vocal (Predicted): ![Vocal Spectrogram](assets/jimi_pred_vocal_spec.png)
+- Mixture: 
+![Mixture Spectrogram](assets/jimi_mix_spec.png)
+- Vocal (Predicted): 
+![Vocal Spectrogram](assets/jimi_pred_vocal_spec.png)
 
 ## Contents
 - **MUSDB_README.md**: Provides details on the MUSDB 2018 Dataset, crucial for training and testing the models.
