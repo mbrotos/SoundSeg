@@ -5,3 +5,5 @@ scipy
 pandas
 mir_eval
 gdown
+matplotlib
+yt-dlp

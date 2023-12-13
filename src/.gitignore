@@ -5,3 +5,6 @@ venv/*
 processed_data/*
 models/*
 __pycache__/*
+model_*/*
+*.wav
+*.mp4
