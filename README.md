@@ -12,13 +12,13 @@ Please see the projects preprint for more details: [Spectral Mapping of Singing 
 ### Original Audio
 - Mixture: 
   <br/><audio controls>
-    <source src="assets/jimi_mix.mp3" type="audio/mp3">
+    <source src="assets/jimi_mix.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 ### Predicted Output
 - Vocal (Predicted): 
   <br/><audio controls>
-    <source src="assets/jimi_pred_vocal.mp3" type="audio/mp3">
+    <source src="assets/jimi_pred_vocal.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
