@@ -3,7 +3,8 @@ from keras.layers import Activation, Conv2D, BatchNormalization, Conv2DTranspose
 
 def get_model(img_size, num_classes=1):
     inputs = Input(shape=img_size + (1,))
-
+    
+    # TODO: set use_bias=False in Conv2D and Conv2DTranspose, because BatchNormalization is used
     conv1 = Conv2D(64, 3, strides=1, padding="same")(inputs)
     conv1 = BatchNormalization()(conv1)
     conv1 = Activation("relu")(conv1)
