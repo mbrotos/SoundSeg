@@ -1,6 +1,7 @@
 # Try it out: https://soundseg.com/
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mbrotos/SoundSeg/blob/main/demo.ipynb)
+[![arXiv](https://img.shields.io/badge/arXiv-2405.20059-b31b1b.svg)](https://arxiv.org/abs/2405.20059)
 
 # SoundSeg
 
