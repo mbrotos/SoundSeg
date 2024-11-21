@@ -24,6 +24,11 @@ Please see the projects preprint for more details: [Spectral Mapping of Singing 
 - Vocal (Predicted): <br/>
 ![Vocal Spectrogram](assets/jimi_pred_vocal_spec.png)
 
+## System Model
+
+![image](https://github.com/user-attachments/assets/060031b6-29cd-4cf6-a935-cc033953d578)
+
+
 ## Contents
 - **MUSDB_README.md**: Provides details on the MUSDB 2018 Dataset, crucial for training and testing the models.
 - **demo.ipynb**: A Jupyter notebook demonstrating the capabilities of SoundSeg.
